@@ -1,0 +1,164 @@
+@font-face {
+    font-family: 'PTsansbold';
+    src: url(/barbershop/fonts/web/ptsansnarrowbold.woff)
+}
+/* *{
+    box-sizing: content-box;
+} */
+html, body {
+    width: 1900px;
+    height: 1750px;
+    margin: auto;
+}
+
+body{
+    background-image: url(D:/barbershop/img/bg_img.jpg);
+    background-size: 1900px auto;
+    background-repeat: no-repeat;
+}
+
+.main-header {
+    width: 100%;
+    min-height: 285px;
+    margin-bottom: 75px;
+}
+.main-navigation {
+    display: flex;
+    flex-direction: column; /*перевернули главную ось*/
+    min-height: 285px;
+    background-color: transparent;
+    align-items: center; /*выровняли по поперечной оси*/
+}
+.main-header-logo{
+    order: 2;
+    width: 368px;
+    height: 153px;
+    /* display: block; */
+}
+.site-navigation {
+    display: flex;
+    flex-direction: row;
+    width: 620px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    min-height: 70px;
+}
+.user-navigation{
+    display: flex;
+    width: 140px;
+    margin: auto;
+    padding: 0;
+    list-style: none;
+
+}
+.main-navigation-wrapper{
+    width: 100%;
+    margin-bottom: 60px;
+    min-height: 70px;
+    background-color: black;
+    background-color: transparent;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+     /*меняешь на колонку становятся меню с новостями*/
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10 px;
+}
+.container1 {
+    display: flex;
+    flex-direction: column;
+     /*меняешь на колонку становятся меню с новостями*/
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10 px;
+}
+.main-navigation-wrapper .container {
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: 'PTsansbold';
+    font-size: larger;
+    text-transform: uppercase;
+    margin: auto;
+}
+.features-list{
+    display: flex;
+    justify-content: space-between;
+    min-height: 170px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+.feature-item{
+    width: 300px;
+    min-height: 170px;
+    list-style: none;
+}
+.index-columns{
+    display: flex;
+    justify-content: space-between;
+    background-image: none;
+    background-color: white;
+    padding: 50px 80px;
+    margin: auto;
+}
+.news {
+    min-height: 315px;
+    width: 380px;
+}
+.gallery {
+    width: 300px;
+    min-height: 315px;
+}
+.features {
+    margin-bottom: 80px;
+}
+.feature-item > h2 {
+    text-transform: uppercase;
+    color: white;
+    font-family: "PTsansbold";
+    text-align: center;
+}
+p {
+    text-transform: uppercase;
+    color: white;
+    font-family: "PTsansbold";
+    font-size: 15px;
+    text-align: center;
+}
+.img-45 {
+    transform: rotate(45deg);
+}
+.news > p, h2 {
+    text-transform: uppercase;
+    font-family: "PTsansbold";
+    text-align: center;
+    color: black;
+}
+a, a:link {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'PTsansbold';
+    font-size: 14px;
+
+}
+.button {
+    width: 200px;
+    height: 44px;
+
+}
+p.index-columns{
+    text-align: start;
+}
