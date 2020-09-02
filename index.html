@@ -11,11 +11,16 @@
     <!-- <meta http-equiv="refresh" content="120">
     <meta http-equiv="refresh" content="300 url=http:/tsn.ua"> -->
     <title>BARberSHOP - Лучший барбершоп в Киеве.</title>
-    <!-- <script src="E:/site/main.js"></script> -->
+    <!-- <script src="D:/barbershop/script.js"></script> -->
+    
     <link href="D:/barbershop/style.css" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
     <style>
-
+        .modal{
+            display: none;
+        }
+        .modal-show{
+            display: block;
+        }
     </style>
 </head>
 
@@ -26,14 +31,12 @@
             <div class="main-navigation-wrapper">
                 <div class="container">
                     <ul class="site-navigation">
-                        <li>Информация</li>
-                        <li>Новости</li>
                         <li>Прайс-лист</li>
                         <li>Магазин</li>
                         <li>Контакты</li>
                     </ul>
                     <ul class="user-navigation">
-                        <li>вход</li>
+                        <li><a class="login-link" href="http://tsn.ua">вход</a></li>
                     </ul>
                 </div>
             </div>
@@ -45,27 +48,29 @@
                 <li class="feature-item">
                     <h2>Быстро</h2>
                     <img src="D:/barbershop/img/square.jpg" class="img-45" alt="rectangle">
-                    <p>мы делаем свою работу быстро два часа<br>пролетят незаметно и вы - счастливый<br> обладатель стильной стрижки-минутки!</p>
+                    <p>мы делаем свою работу быстро два часа<br>пролетят незаметно и вы - счастливый<br> обладатель
+                        стильной стрижки-минутки!</p>
                 </li>
                 <li class="feature-item">
                     <h2>Круто</h2>
                     <img src="D:/barbershop/img/square.jpg" class="img-45" alt="rectangle">
                     <p>забудьте, как вы стриглись раньше.<br> мы сделаем
-                    из вас звезду футбола или кино!<br>во всяком случае
-                внешне.</p>
+                        из вас звезду футбола или кино!<br>во всяком случае
+                        внешне.</p>
                 </li>
                 <li class="feature-item">
                     <h2>Дорого</h2>
                     <img src="D:/barbershop/img/square.jpg" class="img-45" alt="rectangle">
                     <p>Наши мастера - профессионалы своего дела и<br>
-                    не могут стоить дешево. к тому же разве цена<br>
-                не дает статус?</p>
+                        не могут стоить дешево. к тому же разве цена<br>
+                        не дает статус?</p>
                 </li>
             </ul>
         </section>
         <div class="index-columns">
             <section class="news">
                 <h2>новости</h2>
+<<<<<<< HEAD
                 <p class="test">нам наконец завезли ягермайстер! Теперь вы можете
                     пропустить стаканчик во время стрижки
                 </p>
@@ -78,12 +83,27 @@
                 <div class="button">
                     <a class="" href="D:/barbershop/index.html">все новости</a>
                 </div>
+=======
+                <p class="start">нам наконец завезли ягермайстер! Теперь вы можете
+                    пропустить стаканчик во время стрижки
+                </p>
+                <p class="start">11 января</p>
+                <p class="start">
+                    в нашей команде пополненеие. борис "бритва" стригунец,
+                    обладатель множества титулов и наград
+                </p>
+                <p class="start">18 января</p>
+                <a class="button" href="D:/barbershop/index.html">все новости</a>
+>>>>>>> 0e6b72dd63cc849424166d121b1296c66a9ef407
             </section>
             <section class="gallery">
                 <h2>галерея</h2>
                 <p><img src="/barbershop/img/gallery.jpg"></p>
+                <a class="button" href="#">назад</a>
+                <a class="button" href="#">вперед</a>
             </section>
         </div>
+<<<<<<< HEAD
         <div class="index-columns">
             <section class="contacts">
                 <h2>контактная информация</h2>
@@ -109,7 +129,42 @@
     <footer class="main-footer">
     
     </footer>
+=======
+        <form class="appointment-form">
 
+        </form>
+>>>>>>> 0e6b72dd63cc849424166d121b1296c66a9ef407
+
+    </main>
+    <section class="modal modal-login">
+        <div class="modal-close"></div>
+        <h2>личный кабинет</h2>
+        <div class="modal-main">
+            <h5>введите, пожалуйста, логин и пароль</h5>
+        </div>
+        <form class="login-form" action="http://tsn.ua" method="POST">
+            <p>
+                <label for="user-login"></label>
+                <input class="login" id="user-login" type="text" name="login" placeholder="email@mail.com" required>
+            </p>
+            <p>
+                <label for="user-password"></label>
+                <input class="password" id="user-password" type="text" name="password" placeholder="******" required>
+            </p>
+        </form>
+        <p class="login-help">
+            <label class="login-checkbox" >
+                <input type="checkbox" name="remember">
+                <span class="checkbox-indicator">Remember me</span>
+               
+            </label>
+            <a class="restore" href="#">Forgot password?</a>
+        </p>
+        <button class="button-enter" type="submit" formmethod="GET">
+        </button>
+        <!-- <button class="modal-close" type="button">закрыть</button> -->
+    </section>
+<script src="D:/barbershop/script.js"></script>
 
 </body>
 
