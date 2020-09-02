@@ -15,19 +15,19 @@ close.addEventListener("click", function(evt) { //при закрытии
 evt.preventDefault(); //по умолчанию выкл
 popup.classList.remove("modal-show"); //удаляет класс из документа (модальное окно закрывается)
 });
-form.addEventListener("submit", function(evt) {
-    if (!login.value || !password.value) {
-    evt.preventDefault();
-console.log("Let's enter login and password");
-    } else{
-localStorage.setItem("login", login.value);
-    }
-});
-window.addEventListener("keydown", function(event){
-    if (event.keyCode === 27){
-        if (popup.classList.contains("modal-show")) {
-            event.preventDefault();
-            popup.classList.remove("modal-show");
-        }
-    }
-});
+// form.addEventListener("submit", function(evt) {
+//     if (!login.value || !password.value) {
+//     evt.preventDefault();
+// console.log("Let's enter login and password");
+//     } else{
+// localStorage.setItem("login", login.value);
+//     }
+// });
+// window.addEventListener("keydown", function(event){
+//     if (event.keyCode === 27){
+//         if (popup.classList.contains("modal-show")) {
+//             event.preventDefault();
+//             popup.classList.remove("modal-show");
+//         }
+//     }
+// });
